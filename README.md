@@ -5,12 +5,14 @@
 ## Mise en situation :
 - **But :** Catégoriser les champignons en fonction de leur comestibilité, que ce soit à travers leur description (mesures ou textes) ou leur photo.
 - **Jeux de données :** [Guides des Champignons](https://www.guidedeschampignons.com/)
+- **Information : ** Toutes les photos sont issues du site : "https://www.guidedeschampignons.com/"
 
 
 ## Réalisations :
-- **Librairies principales :** Selenium, PIL, NLTK, Spacy, Pymongo, divers modèles de ML, VGG16, GridSearchCV, BayesSearchCV, 
+- **Librairies principales :** Selenium, PIL, NLTK, Spacy, Pymongo, divers modèles de ML, VGG16, GridSearchCV, BayesSearchCV
+   
 - **Etapes réalisées : **
-    - **Analyse des données :**
+    - **Scrapping des données :**
 	- Ouvertures des fichiers
 	- Création/modifications des variables (par calculs, dummisations, factorisation) grâce au code de Kaggle
 	- Merge des fichiers 
