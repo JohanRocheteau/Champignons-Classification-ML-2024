@@ -21,17 +21,25 @@
 	- **Stockage :**
  		- Les données sont stockées sous format DataFrame :
      		![Logo](photos/DataFrameInitiale.png)
+     
    		- Les photos sont stockées sur mon ordinateur.
 
-    - **Analyse et Nettoyage des données :**
+    - **Analyse et nettoyage des données :**
 	- Extraction des données chiffrées (tailles chapeaux et pieds).
  	- Extraction de la saisonnalité des champignons.
   	- Pool des diverses informations textuelles et extractions des mots pertinents via NLP.
   	- Divers graphiques, tableaux et visuels :
   	  ![Logo](photos/Graphiques.png)
+  	  
   	  ![Logo](photos/Graphique2.png)
+  	  
   	  ![Logo](photos/TableauCroisé.png)
+  	  
   	  ![Logo](photos/TopTen.png)
+  	  
   	  ![Logo](photos/WordCloud.png)
-  	- Création de deux catégories : Comestible et Non Comestible
+  	  
+  	- Création de deux catégories : Comestible et Non Comestible (au vu du peu de données à ma disposition).
   	- Stockage des données dans une DataFrame Nettoyée et exportée en CSV/Excel ou sur MongoDB Compass.
+  	  
+  - **Classification des champignons :**
