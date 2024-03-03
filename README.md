@@ -15,7 +15,7 @@
 - **Etapes réalisées : **
     - **Scrapping des données :**
 	- **Objectif :** Passer de champignon en champignon et récupérer le maximum d'informations.
-        - ![Logo](photos/Les Champignons.png)
+        - ![Logo](photos/Les.Champignons.png)
           
         - ![Logo](photos/Champignon.png)
 	- Merge des fichiers 
