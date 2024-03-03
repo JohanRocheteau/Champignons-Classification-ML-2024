@@ -16,6 +16,7 @@
     - **Scrapping des données :**
 	- **Objectif :** Passer de champignon en champignon et récupérer le maximum d'informations.
         - ![Logo](photos/Les Champignons.png)
+          
         - ![Logo](photos/Champignon.png)
 	- Merge des fichiers 
 	- Création de fichiers moins lourds pour GitHub (25Mo max)
