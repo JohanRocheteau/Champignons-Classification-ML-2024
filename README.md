@@ -1,9 +1,10 @@
 # Projet Formation Continue : Classification des Champignons
+![Logo](photos/Morilles.jpg)
+
 
 ## Mise en situation :
-- **Logo :** ![Logo](photos/Morilles.jpg)
 - **But :** Catégoriser les champignons en fonction de leur comestibilité, que ce soit à travers leur description (mesures ou textes) ou leur photo.
-- **Jeux de données :** [Base de Données](https://www.guidedeschampignons.com/)
+- **Jeux de données :** [Guides des Champignons](https://www.guidedeschampignons.com/)
 
 
 ## Réalisations :
