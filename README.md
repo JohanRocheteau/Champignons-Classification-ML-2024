@@ -1,7 +1,7 @@
 # Projet Formation Continue : Classification des Champignons
 
 ## Mise en situation :
-- **Logo :** ![Logo](PhotosReadme/LogoP6.png)
+- **Logo :** ![Logo](photos/20230413_085258.jpg)
 - **But :** Catégoriser les champignons en fonction de leur comestibilité, que ce soit à travers leur description (mesures ou textes) ou leur photo.
 - **Jeux de données :** [Base de Données](https://www.guidedeschampignons.com/)
 
