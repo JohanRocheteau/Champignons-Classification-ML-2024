@@ -5,7 +5,7 @@
 ## Mise en situation :
 - **But :** Catégoriser les champignons en fonction de leur comestibilité, que ce soit à travers leur description (mesures ou textes) ou leur photo.
 - **Jeux de données :** [Guides des Champignons](https://www.guidedeschampignons.com/)
-- **Information :** Toutes les photos sont issues du site le guide des champignons
+- **Information :** Toutes les photos sont issues du site le guide des champignons.
 
 
 ## Réalisations :
