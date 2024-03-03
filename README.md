@@ -20,7 +20,7 @@
       	![Logo](photos/Champignon.png)
 	- **Stockage :**
  		- Les données sont stockées sous format DataFrame :
-     
+     		![Logo](photos/DatatFrameInitiale.png)
    		- Les photos sont stockées sur mon ordinateur.
 
     - **Etude du déséquilibre des données et choix d'un modèle de Machine Learning :**
