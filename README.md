@@ -14,16 +14,20 @@
    
 - **Etapes réalisées : **
     - **Scrapping des données :**
-	- **Objectif :** Passer de champignon en champignon et récupérer le maximum d'informations (textes et photo).
+	- **Objectif :** Passer de champignon en champignon et scraper le maximum d'informations (textes et photo).
       	![Logo](photos/LesChampignons.png)
           
       	![Logo](photos/Champignon.png)
 	- **Stockage :**
  		- Les données sont stockées sous format DataFrame :
-     		![Logo](photos/DatatFrameInitiale.png)
+     		![Logo](photos/DataFrameInitiale.png)
    		- Les photos sont stockées sur mon ordinateur.
 
-    - **Etude du déséquilibre des données et choix d'un modèle de Machine Learning :**
-	- Utilisation de MLFlow pour le suivi et la comparaison des runs
-	- Création de deux métriques pour ajouter du poids aux faux négatifs
-	- **Comparaison de diverses façons de gérer le déséquilibre des données :** SMOTE, Class_Weight, Undersampling, Oversampling
+    - **Analyse et Nettoyage des données :**
+	- Extraction des données chiffrées (tailles chapeaux et pieds).
+ 	- Extraction de la saisonnalité des champignons.
+  	- Pool des diverses informations textuelles et extractions des mots pertinents via NLP.
+  	- Divers graphiques et visuels :
+  	  
+  	- Création de deux catégories : Comestible et Non Comestible
+  	- Stockage des données dans une DataFrame Nettoyée et exportée en CSV/Excel ou sur MongoDB Compass.
