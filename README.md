@@ -42,4 +42,9 @@
   	- Création de deux catégories : Comestible et Non Comestible (au vu du peu de données à ma disposition).
   	- Stockage des données dans une DataFrame Nettoyée et exportée en CSV/Excel ou sur MongoDB Compass.
   	  
-  - **Classification des champignons :**
+  - **Classification des champignons :** 
+ 	- Etude séparée des données textuelles, des images et des données métriques.
+  	- Extractions des données des images avec et sans modifications via VGG16.
+   	- Extraction des données textes via TFIDF. 	  
+  	- Création de définitions pour la réalisation de divers modèles de Machine Learning.
+  	- Optimisation de certains modèles via GridSearchCV ou BayesSearchCV.  
