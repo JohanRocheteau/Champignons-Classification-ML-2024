@@ -14,13 +14,14 @@
    
 - **Etapes réalisées : **
     - **Scrapping des données :**
-	- **Objectif :** Passer de champignon en champignon et récupérer le maximum d'informations.
-        - ![Logo](photos/LesChampignons.png)
+	- **Objectif :** Passer de champignon en champignon et récupérer le maximum d'informations (textes et photo).
+      	![Logo](photos/LesChampignons.png)
           
-        - ![Logo](photos/Champignon.png)
-	- Merge des fichiers 
-	- Création de fichiers moins lourds pour GitHub (25Mo max)
-	- Récupération des nouveaux clients pour l'application
+      	![Logo](photos/Champignon.png)
+	- **Stockage :**
+ 		- Les données sont stockées sous format DataFrame :
+     
+   		- Les photos sont stockées sur mon ordinateur.
 
     - **Etude du déséquilibre des données et choix d'un modèle de Machine Learning :**
 	- Utilisation de MLFlow pour le suivi et la comparaison des runs
