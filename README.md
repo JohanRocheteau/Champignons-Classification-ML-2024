@@ -43,8 +43,22 @@
   	- Stockage des données dans une DataFrame Nettoyée et exportée en CSV/Excel ou sur MongoDB Compass.
   	  
   - **Classification des champignons :** 
- 	- Etude séparée des données textuelles, des images et des données métriques.
   	- Extractions des données des images avec et sans modifications via VGG16.
-   	- Extraction des données textes via TFIDF. 	  
-  	- Création de définitions pour la réalisation de divers modèles de Machine Learning.
-  	- Optimisation de certains modèles via GridSearchCV ou BayesSearchCV.  
+     	- Extraction des données textes via TFIDF.
+      	- Création de définitions pour la réalisation de divers modèles de Machine Learning.
+    	- Etude séparée des données textuelles, des images et des données métriques.
+     	- Modèle de classification non supervisée : KMeans
+        ![Logo](photos/ClassificationNonSupervisée.png)
+        --> Résultats inutilisables, les ARI étant proche de 0 et ce pour les trois analyses. 	  
+
+  	- Modèles de classification supervisées + optimisation des hyperparamètres via GridSearchCV ou BayesSearchCV.
+   	- Résultats pour les images :
+    		- Images Classiques :  
+   	![Logo](photos/Resultat1.png)
+		- Images avec Data Augmentation :
+	![Logo](photos/Resultat2.png)
+		- Images avec détourage :
+	![Logo](photos/PhotoDetouree.png)
+	![Logo](photos/Resultat3.png)
+		- Images si on multiplie par deux les données (concat de la DF avec elle même) :
+	![Logo](photos/Resultat4.png)
