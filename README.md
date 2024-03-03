@@ -55,10 +55,14 @@
    	- Résultats pour les images :
     		- Images Classiques :  
    	![Logo](photos/Resultat1.png)
+
 		- Images avec Data Augmentation :
 	![Logo](photos/Resultat2.png)
+
 		- Images avec détourage :
 	![Logo](photos/PhotoDetouree.png)
+
 	![Logo](photos/Resultat3.png)
+
 		- Images si on multiplie par deux les données (concat de la DF avec elle même) :
 	![Logo](photos/Resultat4.png)
