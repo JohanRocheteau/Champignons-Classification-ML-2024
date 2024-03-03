@@ -54,27 +54,27 @@
   	- Modèles de classification supervisées + optimisation des hyperparamètres via GridSearchCV ou BayesSearchCV.
    	- Résultats pour les images :
       
-    		- Images Classiques :
+          - Données issues des images classiques :
       
    	![Logo](photos/Resultat1.png)
 
-		- Images avec Data Augmentation :
+	  - Données issues des images avec Data Augmentation :
     
 	![Logo](photos/Resultat2.png)
 
-		- Images avec détourage :
+	  - Données issues des images avec détourage :
     
 	![Logo](photos/PhotoDetouree.png)
 
 	![Logo](photos/Resultat3.png)
 
-		- Images si on multiplie par deux les données (concat de la DF avec elle même) :
+	  - Données issus des images avec détourage mais multiplié par 2 (concat de la DF avec elle même) :
     
 	![Logo](photos/Resultat4.png)
 
 ## Analyse et Conclusion :
-	- Faute de données suffisantes les résultats sont peu concluants, même en n'ayant que deux catégories (initialement j'en avais 4).
- 	- J'ai demandé à MycoDB si je pouvais travailler sur leurs données mais pas de réponse. Et il faut déjà 40min pour scraper les données de 250 champignons.
-  	- Je pourrai ajouter un score perso pour que le modèle ne nous retourne pas des champignons toxiques/mortels comme étant des bons champignons.
-   	- Avec un modèle robust, j'aurai pu ensuite créer une application streamlit me permettant juste en prenant la photo d'un champignon de me retourner sa comestibilité, voir même sa famille (avec suffisamment de photos). 
+  - Faute de données suffisantes les résultats sont peu concluants, même en n'ayant que deux catégories (initialement j'en avais 4).
+  - J'ai demandé à MycoDB si je pouvais travailler sur leurs données mais pas de réponse. Et il faut déjà 40min pour scraper les données de 250 champignons.
+  - Je pourrai ajouter un score perso pour que le modèle ne nous retourne pas des champignons toxiques/mortels comme étant des bons champignons.
+  - Avec un modèle robust, j'aurai pu ensuite créer une application streamlit me permettant juste en prenant la photo d'un champignon de me retourner sa comestibilité, voir même sa famille (avec suffisamment de photos). 
  
