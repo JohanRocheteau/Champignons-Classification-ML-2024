@@ -42,7 +42,7 @@
   	- Création de deux catégories : Comestible et Non Comestible (au vu du peu de données à ma disposition).
   	- Stockage des données dans une DataFrame Nettoyée et exportée en CSV/Excel ou sur MongoDB Compass.
   	  
-  - **Classification des champignons :** 
+   - **Classification des champignons :** 
   	- Extractions des données des images avec et sans modifications via VGG16.
      	- Extraction des données textes via TFIDF.
       	- Création de définitions pour la réalisation de divers modèles de Machine Learning.
@@ -52,23 +52,21 @@
         --> Résultats inutilisables, les ARI étant proche de 0 et ce pour les trois analyses. 	  
 
   	- Modèles de classification supervisées + optimisation des hyperparamètres via GridSearchCV ou BayesSearchCV.
-   	- Résultats pour les images :
-      
-          - Données issues des images classiques :
+        - Données issues des images classiques :
       
    	![Logo](photos/Resultat1.png)
 
-	  - Données issues des images avec Data Augmentation :
+	- Données issues des images avec Data Augmentation :
     
 	![Logo](photos/Resultat2.png)
 
-	  - Données issues des images avec détourage :
+	- Données issues des images avec détourage :
     
 	![Logo](photos/PhotoDetouree.png)
 
 	![Logo](photos/Resultat3.png)
 
-	  - Données issus des images avec détourage mais multiplié par 2 (concat de la DF avec elle même) :
+	- Données issus des images avec détourage mais multiplié par 2 (concat de la DF avec elle même) :
     
 	![Logo](photos/Resultat4.png)
 
