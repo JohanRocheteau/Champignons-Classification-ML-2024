@@ -4,8 +4,9 @@
 
 ## Mise en situation :
 - **But :** Catégoriser les champignons en fonction de leur comestibilité, que ce soit à travers leur description (mesures ou textes) ou leur photo.
+- **Problématique :** Ne trouvant pas de base de données Open Source sur les champignons, j'ai du aller chercher les données sur internet via scraping. 
 - **Jeux de données :** [Guides des Champignons](https://www.guidedeschampignons.com/)
-- **Information :** Toutes les photos sont issues du site le guide des champignons.
+- **Information :** Toutes les photos sont la propriété du site le guide des champignons.
 
 
 ## Réalisations :
@@ -13,8 +14,9 @@
    
 - **Etapes réalisées : **
     - **Scrapping des données :**
-	- Ouvertures des fichiers
-	- Création/modifications des variables (par calculs, dummisations, factorisation) grâce au code de Kaggle
+	- **Objectif :** Passer de champignon en champignon et récupérer le maximum d'informations.
+        - ![Logo](photos/Les Champignons.png)
+        - ![Logo](photos/Champignon.png)
 	- Merge des fichiers 
 	- Création de fichiers moins lourds pour GitHub (25Mo max)
 	- Récupération des nouveaux clients pour l'application
