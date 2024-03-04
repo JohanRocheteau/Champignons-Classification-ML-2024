@@ -43,15 +43,15 @@
   	  
 - **Classification des champignons :** 
   	- Extractions des données des images avec et sans modifications via VGG16.
-     	- Extraction des données textes via TFIDF.
-      	- Création de définitions pour la réalisation de divers modèles de Machine Learning.
-    	- Etude séparée des données textuelles, des images et des données métriques.
-     	- Modèle de classification non supervisée : KMeans
+  	- Extraction des données textes via TFIDF.
+  	- Création de définitions pour la réalisation de divers modèles de Machine Learning.
+  	- Etude séparée des données textuelles, des images et des données métriques.
+  	- Modèle de classification non supervisée : KMeans
         ![Logo](photos/ClassificationNonSupervisée.png)
         --> Résultats inutilisables, les ARI étant proche de 0 et ce pour les trois analyses. 	  
 
   	- Modèles de classification supervisées + optimisation des hyperparamètres via GridSearchCV ou BayesSearchCV.
-        - Données issues des images classiques :
+  	- Données issues des images classiques :
       
    	![Logo](photos/Resultat1.png)
 
