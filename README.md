@@ -65,10 +65,6 @@
 
 	![Logo](photos/Resultat3.png)
 
-	- Données issus des images avec détourage mais multiplié par 2 (concat de la DF avec elle même) :
-    
-	![Logo](photos/Resultat4.png)
-
 	--> Les résultats obtenus sont peu concluant, on observe un gros overfitting pour tous les modèles.
   
   	--> L'optimisation via BayesSearchCV est assez longue à réaliser. 
