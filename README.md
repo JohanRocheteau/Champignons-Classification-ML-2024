@@ -70,7 +70,7 @@
   	--> L'optimisation via BayesSearchCV est assez longue à réaliser. 
 
 ## Conclusion :
-  - Faute de données suffisantes les résultats sont peu concluants, même en n'ayant que deux catégories (initialement j'en avais 4).
+  - Faute de données suffisantes les résultats sont peu concluants, même en ayant que deux catégories (initialement j'en avais 4).
   - J'ai demandé à MycoDB si je pouvais travailler sur leurs données mais pas de réponse. Et il faut déjà 40min pour scraper les données de 250 champignons.
   - Je pourrai ajouter un score perso pour que le modèle ne nous retourne pas des champignons toxiques/mortels comme étant des bons champignons.
   - Avec un modèle robust, j'aurai pu ensuite créer une application streamlit me permettant juste en prenant la photo d'un champignon de me retourner sa comestibilité, voir même sa famille (avec suffisamment de photos). 
