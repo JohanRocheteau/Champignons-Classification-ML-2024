@@ -39,7 +39,7 @@
   	  ![Logo](photos/WordCloud.png)
   	  
   	- Création de deux catégories : Comestible et Non Comestible (au vu du peu de données à ma disposition).
-  	- Stockage des données dans une DataFrame Nettoyée et exportée en CSV/Excel ou sur MongoDB Compass.
+  	- Stockage des données dans une DataFrame nettoyée et exportée en CSV/Excel ou sur MongoDB Compass.
   	  
 - **Classification des champignons :** 
   	- Extractions des données des images avec et sans modifications via VGG16.
