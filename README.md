@@ -65,7 +65,7 @@
 
 	![Logo](photos/Resultat3.png)
 
-	--> Les résultats obtenus sont peu concluant, on observe un gros overfitting pour tous les modèles.
+	--> Les résultats obtenus sont peu concluants, on observe un gros overfitting pour tous les modèles.
   
   	--> L'optimisation via BayesSearchCV est assez longue à réaliser. 
 
