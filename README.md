@@ -12,8 +12,7 @@
 ## Réalisations :
 - **Librairies principales :** Selenium, PIL, NLTK, Spacy, Pymongo, divers modèles de ML, VGG16, GridSearchCV, BayesSearchCV
    
-- **Etapes réalisées :**
-    - **Scrapping des données :**
+- **Scrapping des données :**
 	- **Objectif :** Passer de champignon en champignon et scraper le maximum d'informations (textes et photo).
       	![Logo](photos/LesChampignons.png)
           
@@ -24,7 +23,7 @@
      
    		- Les photos sont stockées sur mon ordinateur.
 
-    - **Analyse et nettoyage des données :**
+- **Analyse et nettoyage des données :**
 	- Extraction des données chiffrées (tailles chapeaux et pieds).
  	- Extraction de la saisonnalité des champignons.
   	- Pool des diverses informations textuelles et extractions des mots pertinents via NLP.
@@ -42,7 +41,7 @@
   	- Création de deux catégories : Comestible et Non Comestible (au vu du peu de données à ma disposition).
   	- Stockage des données dans une DataFrame Nettoyée et exportée en CSV/Excel ou sur MongoDB Compass.
   	  
-   - **Classification des champignons :** 
+- **Classification des champignons :** 
   	- Extractions des données des images avec et sans modifications via VGG16.
      	- Extraction des données textes via TFIDF.
       	- Création de définitions pour la réalisation de divers modèles de Machine Learning.
