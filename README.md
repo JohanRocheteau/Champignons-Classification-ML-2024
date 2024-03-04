@@ -69,7 +69,10 @@
     
 	![Logo](photos/Resultat4.png)
 
-## Analyse et Conclusion :
+	--> Les résultats obtenus sont peu concluant, on observe un gros overfitting pour tous les modèles.
+  	--> L'optimisation via BayesSearchCV est assez longue à réaliser. 
+
+## Conclusion :
   - Faute de données suffisantes les résultats sont peu concluants, même en n'ayant que deux catégories (initialement j'en avais 4).
   - J'ai demandé à MycoDB si je pouvais travailler sur leurs données mais pas de réponse. Et il faut déjà 40min pour scraper les données de 250 champignons.
   - Je pourrai ajouter un score perso pour que le modèle ne nous retourne pas des champignons toxiques/mortels comme étant des bons champignons.
