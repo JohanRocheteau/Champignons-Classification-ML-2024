@@ -1,72 +1,86 @@
-# Projet Personnel : Classification des Champignons
+# Projet Formation Continue : Classification des Champignons
 
 ![Logo](photos/Morilles.jpg)  
 
-## **📌 Contexte et Objectif**
-
-**But :** Classifier les champignons en fonction de leur comestibilité en utilisant un modèle de machine learning.  
-**Problématique :** Identifier si un champignon est comestible ou non à partir de caractéristiques numériques et d'images.
-
-### 🔍 **Problématiques étudiées :**
-- Comment classifier les champignons en comestible/non comestible ?
-- Quels sont les modèles de machine learning les plus efficaces pour cette classification ?
-- Quelle est l'importance des données d'images et de caractéristiques physiques pour cette tâche ?
-
-📂 **Jeux de données :**
-- 📊 Source : [UCI Mushroom Data Set](https://archive.ics.uci.edu/ml/datasets/Mushroom)
-- 📥 [Téléchargement du dataset](https://archive.ics.uci.edu/ml/machine-learning-databases/00360/)
+## **📌 Mise en situation :**  
+- **But :** Catégoriser les champignons en fonction de leur comestibilité, que ce soit à travers leur description (mesures ou textes) ou leur photo.  
+- **Problématique :** Ne trouvant pas de base de données Open Source sur les champignons, j'ai dû aller chercher les données sur internet via scraping.  
+- **Jeux de données :** [Guides des Champignons](https://www.guidedeschampignons.com/)  
+- **Information :** Toutes les photos sont la propriété du site "Le guide des champignons".  
 
 ---
 
 ## **🚀 Réalisations et Méthodologie**
 
-### 🔹 **1️⃣ Préparation des données**
-- Chargement et exploration des données depuis le fichier CSV.
-- Nettoyage des données et transformation des variables catégorielles en format numérique.
-- Identification des valeurs manquantes et traitement des doublons.
+### 🔹 **1️⃣ Scraping des données**  
+- **Objectif :** Passer de champignon en champignon et scraper le maximum d'informations (textes et photos).  
+  ![Logo](photos/LesChampignons.png)  
+  ![Logo](photos/Champignon.png)  
 
-### 🔹 **2️⃣ Modélisation et Machine Learning**
-- Sélection des caractéristiques pertinentes pour la classification.
-- Utilisation des modèles de machine learning tels que **Random Forest**, **SVM** et **KNN** pour classer les champignons.
-- Optimisation des hyperparamètres à l’aide de **GridSearchCV** et **BayesSearchCV**.
+- **Stockage :**  
+  - Les données sont stockées sous format DataFrame :  
+    ![Logo](photos/DataFrameInitiale.png)  
+  - Les photos sont stockées localement.  
 
-### 🔹 **3️⃣ Analyse et Visualisation des résultats**
-- Evaluation des performances des modèles avec des métriques comme **accuracy**, **recall**, **precision**.
-- Création de graphiques pour illustrer la comparaison des modèles.
-  
-📊 **Exemples de visualisations :**
+### 🔹 **2️⃣ Analyse et nettoyage des données**  
+- **Extraction des données :** Taille des chapeaux et des pieds des champignons.  
+- **Saisonnalité des champignons :** Extraction de données temporelles pertinentes.  
+- **Traitement NLP :** Pool des informations textuelles et extraction des mots pertinents.  
+- **Visualisation des données :**  
+  ![Logo](photos/Graphiques.png)  
+  ![Logo](photos/Graphique2.png)  
+  ![Logo](photos/TableauCroisé.png)  
+  ![Logo](photos/TopTen.png)  
+  ![Logo](photos/WordCloud.png)  
 
-![Graphique 1](PhotosReadme/Graph1.png)  
-![Graphique 2](PhotosReadme/Graph2.png)  
+- **Création de catégories :** Comestible et Non Comestible (en raison du faible volume de données disponibles).  
+- **Stockage des données nettoyées :** Export dans une DataFrame, CSV/Excel ou MongoDB Compass.  
+
+### 🔹 **3️⃣ Classification des champignons**  
+- **Extraction des données des images :**  
+  - Images avec et sans modifications via **VGG16**.  
+  - Extraction des données textuelles via **TFIDF**.  
+  - Création de définitions pour divers modèles de Machine Learning.  
+
+- **Modèle non supervisé :** **KMeans**  
+  - Résultats inutilisables avec un ARI proche de 0 pour les trois analyses.  
+  ![Logo](photos/ClassificationNonSupervisée.png)  
+
+- **Modèles supervisés :**  
+  - Optimisation des hyperparamètres via **GridSearchCV** ou **BayesSearchCV**.  
+
+- **Résultats :**  
+  - Données issues des images classiques :  
+    ![Logo](photos/Resultat1.png)  
+  - Données issues des images avec **Data Augmentation** :  
+    ![Logo](photos/Resultat2.png)  
+  - Données issues des images avec **détourage** :  
+    ![Logo](photos/PhotoDetouree.png)  
+    ![Logo](photos/Resultat3.png)  
+
+**Note :** Les résultats sont peu concluants avec des signes évidents d'overfitting pour tous les modèles. L'optimisation via **BayesSearchCV** est également longue à réaliser.  
 
 ---
 
-## **📈 Résultats et Insights Clés**
-
-### 🔎 **Conclusions de l'analyse :**
-✔ Les **Random Forests** ont montré les meilleures performances pour la classification.  
-✔ L'importance des caractéristiques physiques des champignons a été démontrée dans les résultats.  
-✔ Des améliorations peuvent être apportées avec plus de données d'images et un affinement des hyperparamètres.
-
-### 📌 **Recommandations pour de futurs travaux :**
-1️⃣ Intégrer des données d’images pour améliorer la performance du modèle.  
-2️⃣ Tester de nouveaux modèles de deep learning pour l’analyse d’images (CNN).  
-3️⃣ Collecter davantage de données pour améliorer la généralisation du modèle.
+## **📈 Conclusion :**  
+- **Problème de données insuffisantes :** Les résultats restent peu concluants, même en réduisant les catégories de 4 à 2 (Comestible vs Non Comestible).  
+- **Proposition de solutions futures :**  
+  - J'ai contacté **MycoDB** pour obtenir leurs données, mais sans réponse pour l'instant.  
+  - Une amélioration possible serait d'ajouter un score personnel pour éviter que des champignons toxiques/mortels soient classés comme comestibles.  
+  - Si un modèle plus robuste était disponible, une application **Streamlit** pourrait être créée pour identifier la comestibilité des champignons à partir d'une photo, avec la possibilité d'identifier même la famille avec plus de données.  
 
 ---
 
-## **🛠️ Technologies et Outils Utilisés**
-
-- **Langage** : Python 🐍  
-- **Librairies** : Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn  
-- **Environnement** : Jupyter Notebook  
-- **Méthodes utilisées** : Classification supervisée, Evaluation de modèles, Optimisation des hyperparamètres  
+## **🛠️ Technologies et Outils Utilisés**  
+- **Langage :** Python 🐍  
+- **Librairies :** Selenium, PIL, NLTK, Spacy, Pymongo, VGG16, Scikit-learn, GridSearchCV, BayesSearchCV  
+- **Environnement :** Jupyter Notebook  
 
 ---
 
-## **📬 Contact et Feedback**
+## **📬 Contact et Feedback**  
 
-💡 Ce projet a été réalisé dans le cadre d’une **formation personnelle en Data Science**. N’hésitez pas à **laisser vos suggestions** ou à me **contacter** pour en discuter !
+💡 Ce projet a été réalisé dans le cadre d’une **formation continue en Data Science**. N’hésitez pas à **laisser vos suggestions** ou à me **contacter** pour en discuter !  
 
 📩 **Contact :**  
 📧 [johan.rocheteau@hotmail.fr](mailto:johan.rocheteau@hotmail.fr)  
