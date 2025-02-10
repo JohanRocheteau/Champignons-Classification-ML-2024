@@ -1,6 +1,6 @@
 # Projet Personnel : Classification des Champignons
 
-![Logo](PhotosReadme/LogoChampignons.png)  
+![Logo](photos/Morilles.jpg)  
 
 ## **📌 Contexte et Objectif**
 
